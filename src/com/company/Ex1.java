@@ -6,14 +6,14 @@ public class Ex1 {
         //TODO 問1. 標準出力に Hello World と出力してください。
 
 
-        //TODO 問2. 変数 str に 文字列"Hello world"を代入し、標準出力で、Hello のみを出力してください。
+        //TODO 問2. 変数 str に 文字列"Hello world"を代入し、標準出力で、Helloのみを出力してください。
 
 
         //TODO 問3. 以下の浮動小数点型の変数PIを、整数型にして標準出力に出力してください。
         double PI = 3.14;
 
 
-        //TODO 問4. 以下の配列を、for文を使って、偶数の要素のみ標準出力で出力してください。
+        //TODO 問4. 以下の配列を、for文を使って、偶数番目の要素のみ標準出力で出力してください。
         String[] sweets = {"Anko", "Banana", "Cupcake", "Donut", "Eclair", "Froyo"};
 
     }
