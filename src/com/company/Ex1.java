@@ -28,7 +28,6 @@ public class Ex1 {
         		System.out.println(sweets[i]);
         	}
         }
-
         //お片づけ
         scan.close();
     }
