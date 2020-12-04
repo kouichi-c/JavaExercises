@@ -7,6 +7,9 @@ public class Ex1 {
     public static void main(String[] args) {
         //TODO 問1. 標準出力に Hello World と出力してください。
     	Scanner scan = new Scanner(System.in);
+    	String str = scan.nextLine();
+    	System.out.println(str);
+    	scan.close();
 
 
         //TODO 問2. 変数 str に 文字列"Hello world"を代入し、標準出力で、Hello のみを出力してください。
