@@ -10,6 +10,7 @@ public class Ex3 {
         例. 入力: 476
             出力: 17
          */
+//    	テスト
         System.out.println("3桁の整数を入力してください");
         // Let's coding!
         Scanner scanner = new Scanner(System.in);
