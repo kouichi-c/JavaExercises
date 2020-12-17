@@ -33,7 +33,7 @@ public class Ex4 {
         	result = false;
         }else if(num1 > 0 && num2 > 0 && num3 >0) {
         	result = false;
-        }else if(num1 < 0 && num2 < 0 && num3 <0) {
+        }else if(num1 <= 0 && num2 <= 0 && num3 <=0) {
         	result = false;
         }else {
         	result = true;
