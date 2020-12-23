@@ -21,40 +21,23 @@ public class Ex4 {
         int num2 = scanner.nextInt();
         int num3 = scanner.nextInt();
 
+        boolean result = judg(num1,num2,num3);
+
         scanner.close();
-
-        //falseになる条件を考える
-        boolean result = true;
-        if(num1 > 0 && num2 >0) {
-        	result = false;
-        }else if(num1 > 0 && num3 > 0) {
-        	result = false;
-        }else if(num2 > 0 && num3 > 0) {
-        	result = false;
-        }else if(num1 > 0 && num2 > 0 && num3 >0) {
-        	result = false;
-        }else if(num1 <= 0 && num2 <= 0 && num3 <=0) {
-        	result = false;
-        }else {
-        	result = true;
-        }
-
-        //trueになる条件を考える
-        boolean result2 = false;
-        if(num1 > 0 && num2 <= 0 && num3 <= 0) {
-        	result2 = true;
-        }else if(num1 <= 0 && num2 > 0 && num3 <= 0) {
-        	result2 = true;
-        }else if(num1 <= 0 && num2 <= 0 && num3 > 0) {
-        	result2 = true;
-        }else {
-        	result2 = false;
-        }
-
-
         System.out.println(result);
-        System.out.println(result2);
-
-
     }
+
+	public static boolean judg(int num1, int num2, int num3) {
+		if (num1 > 0 && num2 > 0) {//条件１
+			return false;
+		} else if (num1 > 0 && num3 > 0) {//条件２
+			return false;
+		} else if (num2 > 0 && num3 > 0) {//条件３
+			return false;
+		} else if (num1 <= 0 && num2 <= 0 && num3 <= 0) {//条件４
+			return false;
+		} else {
+			return true;
+		}
+	}
 }
