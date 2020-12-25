@@ -5,23 +5,55 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Ex4Test {
-
 	@Test
-	public void testEx4() {
+	public void testCase1() {
 		Ex4 ex4 = new Ex4();
-		boolean actual = ex4.judg(1000000000, -999999999, -999999999);
-		boolean expect = false;
-		boolean expect2 = true;
-		assertEquals(expect2,actual);
+		boolean actual = ex4.judg(1, 1, 0);
+		assertEquals(false,actual);
+	}
+	@Test
+	public void testCase2() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(1, 0, 1);
+		assertEquals(false,actual);
+	}
+	@Test
+	public void testCase3() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(0, 1, 1);
+		assertEquals(false,actual);
+	}
+	@Test
+	public void testCase4() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(0, 0, 0);
+		assertEquals(false,actual);
+	}
+
+	//trueが返ってくるかテスト
+	@Test
+	public void testCaseTrue() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(3, 0, 0);
+		assertEquals(true,actual);
+	}
+	@Test
+	public void testCaseTrue2() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(0, 5, 0);
+		assertEquals(true,actual);
+	}
+	@Test
+	public void testCaseTrue3() {
+		Ex4 ex4 = new Ex4();
+		boolean actual = ex4.judg(0, 0, 13);
+		assertEquals(true,actual);
 	}
 
 }
 /*
- * 条件１　[1,1,0] 期待値 false テストの結果 false
- * 条件２　[1,0,1] 期待値 false テストの結果 false
- * 条件３　[0,1,1] 期待値 false テストの結果 false
- * 条件４　[0,0,0] 期待値 false テストの結果 false
- * 全角数字でやっても一応エラーは起きずに期待通りの動きをする
- * ex4.judg(num1,num2,num3)に文字を入れるとエラーが起きてコンパイルが通らない
- * numがint型だから11桁になるとエラーがでるs
+ * そのほかに試したこと
+ * ex4.judg(num1,num2,num3)に文字(ローマ字やひらがな)を入れるとエラーが起きてコンパイルが通らない
+ * numがint型だから11桁になるとエラーがでる
+ * 小数でもエラーがでる
  */
